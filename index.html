@@ -42,7 +42,8 @@
   .crown-bg {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='80' height='60' viewBox='0 0 80 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M67 31L58 55C45.5 52 38.5 52 26 55.5L17 31L36 46L41 24L46 46L67 31Z' fill='%23F4C430' fill-opacity='0.03'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='100' viewBox='0 0 1024 1024' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M862 406L749.5 713C563.801 673.804 459.691 673.062 274 713.5L161 405L402 554.5L509 274.5L618.5 554.5L862 406Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3Cpath d='M290.5 686L212 468L508.5 657.5C416.388 660.51 368.274 665.929 290.5 686Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M810.5 467L513 657C600.432 658.166 648.83 664.822 734.5 683L810.5 467Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M592 571L508.5 627.5L424 571L508.5 348L592 571Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 733L274 713.5C459.693 672.961 563.806 672.81 749.5 713L741 733C560.309 699.715 459.753 700.682 281 733Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 741.999V732C459.087 700.43 559.757 699.668 741 732.5V741.499C561.36 762.645 460.645 763.377 281 741.999Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3C/svg%3E");
+    background-size: 120px 100px;
     pointer-events: none;
     z-index: 0;
   }
@@ -688,12 +689,12 @@
       <div class="model-card dfs">
         <div class="model-badge">Daily Fantasy Sports</div>
         <h3>USD</h3>
-        <p>Skill-based DFS pick'em contest model. Users enter with real USD and compete by predicting individual player statistical performances. Minimum 3 picks from 3 different teams. Classified as a game of skill under UIGEA and state DFS laws.</p>
+        <p>Skill-based DFS pick'em contest model. Users enter with real USD and compete by predicting individual player statistical performances. Minimum 3 picks, one pick per player, from at least 3 different teams. Classified as a game of skill under UIGEA and state DFS laws.</p>
         <ul class="model-details">
           <li><span class="label">Currency</span><span class="value">USD (real money)</span></li>
           <li><span class="label">Purchase</span><span class="value">Direct entry fee</span></li>
           <li><span class="label">Pick Types</span><span class="value">Player props only: over/under on individual stats</span></li>
-          <li><span class="label">Format</span><span class="value">1v1 Pick'em: min 3 picks, min 3 teams</span></li>
+          <li><span class="label">Format</span><span class="value">1v1 Pick'em: min 3 picks, 1 per player, 3+ teams</span></li>
           <li><span class="label">Tie Rule</span><span class="value">Both users refunded (with playthrough req.)</span></li>
           <li><span class="label">Entry Range</span><span class="value">$5 – $50 USD</span></li>
           <li><span class="label">Age</span><span class="value">18+ (21+ in AZ, MA, VA)</span></li>
@@ -812,7 +813,7 @@
       </div>
       <div class="fact-card">
         <h4>Matching</h4>
-        <p>Fully automated and random. Users cannot choose opponents. Entries matched by format, currency, and entry amount only. Prevents collusion.</p>
+        <p>Fully automated and random. Users cannot choose opponents. Entries matched by format, currency, and entry amount. DFS matches require at least 2 of 3 picks on different players. Prevents collusion.</p>
       </div>
       <div class="fact-card">
         <h4>Supported Sports</h4>
