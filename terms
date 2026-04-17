@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — BattlePicks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --gold: #F4C430;
+    --near-black: #0A0A0A;
+    --surface: #111;
+    --card: #161616;
+    --border: #222;
+    --white: #fff;
+    --off-white: #e0e0e0;
+    --gray: #888;
+    --muted: #555;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--near-black);
+    color: var(--off-white);
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+  .crown-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='100' viewBox='0 0 1024 1024' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M862 406L749.5 713C563.801 673.804 459.691 673.062 274 713.5L161 405L402 554.5L509 274.5L618.5 554.5L862 406Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3Cpath d='M290.5 686L212 468L508.5 657.5C416.388 660.51 368.274 665.929 290.5 686Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M810.5 467L513 657C600.432 658.166 648.83 664.822 734.5 683L810.5 467Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M592 571L508.5 627.5L424 571L508.5 348L592 571Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 733L274 713.5C459.693 672.961 563.806 672.81 749.5 713L741 733C560.309 699.715 459.753 700.682 281 733Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 741.999V732C459.087 700.43 559.757 699.668 741 732.5V741.499C561.36 762.645 460.645 763.377 281 741.999Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3C/svg%3E");
+    background-size: 120px 100px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 40px;
+    display: flex; align-items: center;
+  }
+  nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 24px 60px;
+  }
+  h1 {
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  strong { color: var(--white); }
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: var(--surface);
+    color: var(--gold);
+    font-weight: 600;
+  }
+  td { color: var(--off-white); }
+  a { color: var(--gold); }
+  .updated {
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 80px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="crown-bg"></div>
+<nav><a href="/">BATTLEPICKS</a></nav>
+<div class="container">
+<h1>BattlePicks Terms of Service</h1>
+<p><strong>Effective Date: [DATE]</strong></p>
+<p><strong>IMPORTANT: PLEASE READ THESE TERMS CAREFULLY. THEY CONTAIN A BINDING ARBITRATION PROVISION AND CLASS ACTION WAIVER THAT AFFECT YOUR LEGAL RIGHTS (SEE SECTION 10). BY CREATING AN ACCOUNT, YOU AGREE TO THESE TERMS.</strong></p>
+<hr />
+<h2>1. Agreement to Terms</h2>
+<p>By downloading the BattlePicks mobile application ("App"), using our website at battlepicks.co ("Site"), creating an account ("Account"), or using any of our services ("Services"), you agree to be bound by these Terms of Service ("Terms"), our Privacy Policy, and our DFS Contest Rules. If you do not agree, do not use the Services.</p>
+<p>BattlePicks is operated by BattlePicks LLC, a Texas limited liability company ("BattlePicks," "we," "us," or "our"). When we say "you" or "User," we mean any person who accesses or uses the Services.</p>
+<h2>2. What BattlePicks Is</h2>
+<p>BattlePicks is a Daily Fantasy Sports ("DFS") platform that offers skill-based peer-to-peer prediction contests ("Contests"). Users compete against one another — not against BattlePicks — by selecting individual player statistical performance predictions ("Picks"). BattlePicks acts as a neutral platform facilitating Contests between Users and does not take positions against Users, set odds, or act as a bookmaker.</p>
+<p>Contest outcomes are determined by the actual statistical performance of real athletes in real sporting events. BattlePicks charges a platform fee ("Rake") of 5% on each completed Contest, deducted from the prize pool.</p>
+<p>All odds and statistical lines displayed on the platform are sourced from licensed third-party sportsbooks via The Odds API. BattlePicks does not create, modify, or set any odds or lines.</p>
+<h2>3. Eligibility</h2>
+<p>To use BattlePicks and participate in Contests, you must:</p>
+<p>(a) Be at least 18, 19, or 21 years of age, depending on the legal requirements of your jurisdiction;</p>
+<p>(b) Be physically located within a jurisdiction where DFS contests are permitted under applicable law at the time of Contest entry ("Eligible Jurisdiction");</p>
+<p>(c) Be a citizen or permanent resident of the United States;</p>
+<p>(d) Not be an employee, officer, director, contractor, or agent of BattlePicks, or an immediate family member or household member of such person;</p>
+<p>(e) Not be a person who is self-excluded or otherwise prohibited from participating in DFS contests under any applicable law, regulation, or voluntary program;</p>
+<p>(f) Provide accurate, complete, and current registration information.</p>
+<p>BattlePicks uses geolocation technology to verify your physical location. The use of VPNs, proxies, or any other method to disguise or misrepresent your location is strictly prohibited and will result in Account termination and forfeiture of funds.</p>
+<p>A current list of Eligible Jurisdictions is maintained in the App and at battlepicks.co. This list may change as laws evolve. If your jurisdiction becomes ineligible while you have funds in your Account, you will be notified and given the opportunity to withdraw your deposited funds.</p>
+<h2>4. Accounts</h2>
+<h3>4.1 Account Creation</h3>
+<p>To participate in Contests, you must create an Account by providing a valid email address, username, and password. You must provide truthful and accurate information. Each person may create only one Account.</p>
+<h3>4.2 Account Security</h3>
+<p>You are responsible for maintaining the confidentiality of your Account credentials and for all activity that occurs under your Account. You must notify us immediately at support@battlepicks.co if you believe your Account has been compromised.</p>
+<h3>4.3 Multi-Accounting</h3>
+<p>Creating or controlling multiple Accounts is strictly prohibited. If BattlePicks determines, in its sole discretion, that you have created or control multiple Accounts, we reserve the right to: (a) suspend or terminate all associated Accounts; (b) void any pending Contests; (c) forfeit any winnings derived from multi-accounting activity; and (d) refund deposits to the original payment method, less any winnings forfeited.</p>
+<h3>4.4 Account Termination</h3>
+<p>BattlePicks reserves the right to suspend or terminate your Account at any time, for any reason, including but not limited to: violation of these Terms, fraudulent activity, collusion, use of prohibited software or tools, regulatory requirements, or any conduct that BattlePicks deems harmful to the platform or its Users. Upon termination for cause, deposits may be refunded and winnings may be forfeited at BattlePicks' sole discretion.</p>
+<p>You may delete your Account at any time through the App's Settings. You must withdraw any remaining balance before deleting your Account. Accounts with a balance greater than $0 cannot be deleted. Accounts with active Contests cannot be deleted until all Contests have settled.</p>
+<h2>5. How Contests Work</h2>
+<h3>5.1 Contest Format</h3>
+<p>BattlePicks offers peer-to-peer DFS pick'em Contests ("Props Battle"). Each Contest requires you to select a minimum of three (3) Picks on individual player statistical performances (e.g., points, rebounds, assists). Picks must satisfy the following structural requirements:</p>
+<p>(a) A minimum of three (3) Picks per Contest entry;
+(b) Each Pick must be on a different player (one Pick per player);
+(c) Picks must span at least two (2) different teams;
+(d) No more than one (1) overlapping player between matched Users.</p>
+<h3>5.2 Matching</h3>
+<p>Contest entries are matched automatically by the platform based on format, currency, and entry amount. You cannot choose, challenge, or request a specific opponent. Matching is designed to ensure fairness and prevent collusion.</p>
+<p>If no opponent is found before the first game in your entry begins, your entry will be automatically canceled and your entry fee refunded.</p>
+<h3>5.3 Scoring</h3>
+<p>Each Pick is scored using a points system based on the payout multiplier (decimal odds) of the selected line at the time the entry was locked. Riskier predictions earn more points if correct. The User with the higher total points across all Picks wins the Contest.</p>
+<h3>5.4 Settlement</h3>
+<p>Contests are settled automatically after all games included in the Contest have been completed and final player statistics are available.</p>
+<p>Settlement edge cases:
+- <strong>Did Not Play (DNP):</strong> If a player does not participate in the game, that Pick is scored as a Push (1.0 points).
+- <strong>Injury During Game:</strong> If a player is injured during a game, the Pick is graded based on the player's final statistical line.
+- <strong>Postponed or Canceled Games:</strong> If a game is postponed or canceled and no final statistics are available within 24 hours of the originally scheduled start time, the affected Pick is voided (scored as Push, 1.0 points).
+- <strong>Missing Statistical Data:</strong> If statistical data is unavailable within 24 hours after game completion, the affected Pick may be placed under manual review. BattlePicks will make reasonable efforts to obtain the data and grade the Pick accurately.
+- <strong>Ties:</strong> If both Users score the same total points, the Contest is declared a tie and both Users receive a full refund of their entry fee.
+- <strong>All Picks Voided:</strong> If all Picks in a Contest are voided, both Users receive a full refund of their entry fee and no Rake is charged.</p>
+<h3>5.5 Rake</h3>
+<p>BattlePicks charges a Rake of 5% on each completed Contest. The Rake is deducted from the total prize pool before the winner is paid. For example, if two Users each enter $10, the total pool is $20, the Rake is $1.00, and the winner receives $19.00.</p>
+<h2>6. Deposits and Withdrawals</h2>
+<h3>6.1 Deposits</h3>
+<p>You may deposit funds into your Account using approved payment methods, which may include credit cards, debit cards, and ACH bank transfers. Minimum deposit amounts are $10 for card payments and $25 for ACH transfers. Maximum deposit amounts are displayed in the App and may change from time to time.</p>
+<p>All deposits are processed by third-party payment processors. BattlePicks does not store your full credit card number or banking credentials.</p>
+<h3>6.2 Playthrough Requirement</h3>
+<p>All deposited funds are subject to a one-time (1x) playthrough requirement before withdrawal. This means you must wager your deposited amount at least once in Contests before you may withdraw any funds. The playthrough requirement exists to prevent fraud and abuse.</p>
+<p>If a Contest is refunded (due to tie, all-voided Picks, or unmatched entry), the refunded amount is re-added to your playthrough requirement.</p>
+<p>By depositing funds, you acknowledge and agree to the playthrough requirement.</p>
+<h3>6.3 Withdrawals</h3>
+<p>You may withdraw funds from your Account to your linked bank account via ACH transfer, subject to the following conditions:</p>
+<p>(a) You have completed the playthrough requirement on all deposited funds;
+(b) You have completed identity verification (KYC) as required by BattlePicks;
+(c) Your Account is in good standing (not suspended, banned, or under investigation);
+(d) The withdrawal amount does not exceed your available balance;
+(e) The withdrawal meets the minimum withdrawal amount of $25.</p>
+<p>Withdrawals are reviewed and processed within 1-3 business days. BattlePicks reserves the right to delay or deny withdrawals pending investigation of suspected fraud, collusion, or Terms violations.</p>
+<h3>6.4 Refunds</h3>
+<p>Deposits are generally non-refundable. Refunds may be issued at BattlePicks' sole discretion in cases of technical error, platform malfunction, or as required by applicable law.</p>
+<h2>7. Prohibited Conduct</h2>
+<p>You agree not to:</p>
+<p>(a) Create or control more than one Account;
+(b) Use a VPN, proxy, or any method to disguise your location;
+(c) Collude with other Users to manipulate Contest outcomes;
+(d) Use automated software, bots, scripts, or other tools to interact with the platform;
+(e) Engage in match-fixing, including coordinating Picks with an opponent;
+(f) Deposit funds using stolen or unauthorized payment methods;
+(g) Attempt to exploit bugs, errors, or vulnerabilities in the platform;
+(h) Harass, threaten, or abuse other Users through match chat or any platform feature;
+(i) Use the platform for money laundering or any illegal purpose;
+(j) Provide false or misleading information during registration, verification, or at any time;
+(k) Participate in Contests while located in an ineligible jurisdiction;
+(l) Participate in Contests while under the applicable minimum age;
+(m) Share your Account credentials or allow another person to use your Account.</p>
+<p>Violation of any of the above may result in immediate Account suspension or termination, forfeiture of funds, and reporting to appropriate authorities.</p>
+<h2>8. Identity Verification (KYC)</h2>
+<p>BattlePicks may require you to verify your identity at any time, including but not limited to before processing your first withdrawal. Identity verification may include providing a government-issued photo ID, a selfie for liveness verification, and confirmation of your date of birth and residential address.</p>
+<p>If your identity verification reveals that you are underage, located in an ineligible jurisdiction, or have provided false information, your Account will be terminated, your winnings will be forfeited, and your deposits will be refunded to the original payment method.</p>
+<p>BattlePicks uses third-party identity verification providers and handles your personal data in accordance with our Privacy Policy.</p>
+<h2>9. Intellectual Property</h2>
+<p>All content on the App and Site, including but not limited to text, graphics, logos, icons, images, audio clips, software, and the compilation thereof, is the property of BattlePicks or its licensors and is protected by United States and international copyright, trademark, and other intellectual property laws.</p>
+<p>"BattlePicks," the BattlePicks crown logo, and related marks are trademarks of BattlePicks LLC. You may not use any BattlePicks trademarks without our prior written permission.</p>
+<p>You may not copy, modify, distribute, sell, lease, reverse engineer, or create derivative works based on the App, Site, or Services without our express written consent.</p>
+<h2>10. Dispute Resolution, Arbitration, and Class Action Waiver</h2>
+<p><strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.</strong></p>
+<h3>10.1 Informal Resolution</h3>
+<p>Before initiating any formal dispute resolution, you agree to first contact BattlePicks at support@battlepicks.co and attempt to resolve the dispute informally for at least thirty (30) days.</p>
+<h3>10.2 Binding Arbitration</h3>
+<p>If the dispute is not resolved informally, you and BattlePicks agree that any dispute, claim, or controversy arising out of or relating to these Terms, your Account, or the Services will be resolved exclusively through binding individual arbitration conducted by the American Arbitration Association ("AAA") under its Consumer Arbitration Rules, and not in a court of law.</p>
+<p>The arbitration will be conducted in the English language, and the arbitrator's decision will be final and binding. Judgment on the arbitration award may be entered in any court of competent jurisdiction.</p>
+<h3>10.3 Class Action Waiver</h3>
+<p><strong>YOU AND BATTLEPICKS AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, CONSOLIDATED, OR REPRESENTATIVE PROCEEDING.</strong> Unless both you and BattlePicks agree otherwise, the arbitrator may not consolidate or join more than one person's or party's claims and may not otherwise preside over any form of a consolidated, representative, or class proceeding.</p>
+<h3>10.4 Exceptions</h3>
+<p>Notwithstanding the foregoing, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation, or violation of intellectual property rights.</p>
+<h3>10.5 Opt-Out</h3>
+<p>You have the right to opt out of binding arbitration within thirty (30) days of creating your Account by sending a written notice to support@battlepicks.co with the subject line "Arbitration Opt-Out" that includes your name, username, email address, and a clear statement that you wish to opt out of the arbitration agreement.</p>
+<h2>11. Limitation of Liability</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL BATTLEPICKS, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+<p>(a) Your access to or use of or inability to access or use the Services;
+(b) Any conduct or content of any third party on the Services;
+(c) Any content obtained from the Services;
+(d) Unauthorized access, use, or alteration of your transmissions or content;
+(e) Errors in scoring, settlement, or grading of Contests;
+(f) Technical failures, interruptions, or downtime of the platform.</p>
+<p>IN NO EVENT SHALL BATTLEPICKS' TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE SERVICES EXCEED THE AMOUNT YOU HAVE DEPOSITED INTO YOUR ACCOUNT IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR TWO HUNDRED FIFTY DOLLARS ($250), WHICHEVER IS GREATER.</p>
+<h2>12. Disclaimer of Warranties</h2>
+<p>THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED. BATTLEPICKS DISCLAIMS ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+<p>BATTLEPICKS DOES NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVICES OR THE SERVERS THAT MAKE THEM AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+<h2>13. Indemnification</h2>
+<p>You agree to indemnify, defend, and hold harmless BattlePicks, its officers, directors, employees, agents, and affiliates from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from: (a) your use of the Services; (b) your violation of these Terms; (c) your violation of any third-party right, including intellectual property or privacy rights; or (d) any claim that your use of the Services caused damage to a third party.</p>
+<h2>14. Governing Law</h2>
+<p>These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions. To the extent that litigation is permitted under these Terms, you and BattlePicks agree to submit to the exclusive jurisdiction of the state and federal courts located in Texas.</p>
+<h2>15. Modifications to Terms</h2>
+<p>BattlePicks reserves the right to modify these Terms at any time. We will provide notice of material changes by posting the updated Terms on the Site and App with a new effective date. Your continued use of the Services after the effective date of the revised Terms constitutes your acceptance of the changes.</p>
+<h2>16. Modifications to Services</h2>
+<p>BattlePicks reserves the right to modify, suspend, or discontinue the Services, or any feature or portion thereof, at any time without prior notice. BattlePicks shall not be liable to you or any third party for any modification, suspension, or discontinuation of the Services.</p>
+<h2>17. Severability</h2>
+<p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect. The invalid or unenforceable provision will be modified to the minimum extent necessary to make it valid and enforceable.</p>
+<h2>18. Entire Agreement</h2>
+<p>These Terms, together with the Privacy Policy and DFS Contest Rules, constitute the entire agreement between you and BattlePicks regarding the Services and supersede all prior agreements and understandings.</p>
+<h2>19. Contact</h2>
+<p>If you have questions about these Terms, please contact us at:</p>
+<p>BattlePicks LLC
+Email: support@battlepicks.co
+Website: battlepicks.co</p>
+<hr />
+<p><em>Last updated: [DATE]</em></p>
+</div>
+</body>
+</html>
