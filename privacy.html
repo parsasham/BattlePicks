@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — BattlePicks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --gold: #F4C430;
+    --near-black: #0A0A0A;
+    --surface: #111;
+    --card: #161616;
+    --border: #222;
+    --white: #fff;
+    --off-white: #e0e0e0;
+    --gray: #888;
+    --muted: #555;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--near-black);
+    color: var(--off-white);
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+  .crown-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='100' viewBox='0 0 1024 1024' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M862 406L749.5 713C563.801 673.804 459.691 673.062 274 713.5L161 405L402 554.5L509 274.5L618.5 554.5L862 406Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3Cpath d='M290.5 686L212 468L508.5 657.5C416.388 660.51 368.274 665.929 290.5 686Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M810.5 467L513 657C600.432 658.166 648.83 664.822 734.5 683L810.5 467Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M592 571L508.5 627.5L424 571L508.5 348L592 571Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 733L274 713.5C459.693 672.961 563.806 672.81 749.5 713L741 733C560.309 699.715 459.753 700.682 281 733Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 741.999V732C459.087 700.43 559.757 699.668 741 732.5V741.499C561.36 762.645 460.645 763.377 281 741.999Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3C/svg%3E");
+    background-size: 120px 100px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 40px;
+    display: flex; align-items: center;
+  }
+  nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 24px 60px;
+  }
+  h1 {
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  strong { color: var(--white); }
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: var(--surface);
+    color: var(--gold);
+    font-weight: 600;
+  }
+  td { color: var(--off-white); }
+  a { color: var(--gold); }
+  .updated {
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 80px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="crown-bg"></div>
+<nav><a href="/">BATTLEPICKS</a></nav>
+<div class="container">
+<h1>BattlePicks Privacy Policy</h1>
+<p><strong>Effective Date: [DATE]</strong></p>
+<p>BattlePicks LLC ("BattlePicks," "we," "us," or "our") operates the BattlePicks mobile application ("App") and website at battlepicks.co ("Site"). This Privacy Policy describes how we collect, use, store, and share your personal information when you use our services ("Services").</p>
+<p>By creating an Account or using the Services, you agree to the collection and use of information as described in this Privacy Policy.</p>
+<hr />
+<h2>1. Information We Collect</h2>
+<h3>1.1 Information You Provide</h3>
+<p><strong>Account Registration:</strong> When you create an Account, we collect your email address, username, and password. Your password is stored in hashed form — we never store or have access to your plaintext password.</p>
+<p><strong>Identity Verification (KYC):</strong> When required (such as before your first withdrawal), we or our third-party identity verification provider may collect your full legal name, date of birth, residential address, a photograph of your government-issued identification (such as a driver's license or passport), and a selfie for liveness verification.</p>
+<p><strong>Financial Information:</strong> When you deposit or withdraw funds, our third-party payment processors collect your payment information (credit/debit card number, bank account and routing number). BattlePicks does not store your full card number or bank account credentials. We receive only transaction confirmation data (amount, status, timestamp, and a tokenized reference).</p>
+<p><strong>Communications:</strong> If you contact us at support@battlepicks.co, we collect the content of your messages, your email address, and any attachments you provide.</p>
+<p><strong>Contest Activity:</strong> We collect information about your Contest entries, Picks, match results, chat messages, and transaction history.</p>
+<h3>1.2 Information We Collect Automatically</h3>
+<p><strong>Device Information:</strong> We collect your device type, operating system, device identifier, and app version.</p>
+<p><strong>Location Information:</strong> We collect your approximate location using IP-based geolocation to verify you are in an Eligible Jurisdiction. We may also request GPS-based location data through your device. We do not continuously track your location — we check it at the time of Contest entry and other relevant actions.</p>
+<p><strong>Usage Information:</strong> We collect information about how you use the App, including screens visited, features used, and actions taken.</p>
+<p><strong>Log Data:</strong> Our servers automatically record information including your IP address, browser type, referring/exit pages, and timestamps.</p>
+<p><strong>Push Notification Token:</strong> If you grant notification permission, we collect your device's push notification token to send you notifications about matches, results, and chat messages.</p>
+<h3>1.3 Information from Third Parties</h3>
+<p>We may receive information from third-party services we use, including identity verification results from our KYC provider, transaction data from our payment processors, and geolocation data from our geolocation service provider.</p>
+<hr />
+<h2>2. How We Use Your Information</h2>
+<p>We use your information for the following purposes:</p>
+<p><strong>To Operate the Platform:</strong> Create and manage your Account, process Contest entries, match you with opponents, score and settle Contests, and process deposits and withdrawals.</p>
+<p><strong>To Verify Your Identity:</strong> Confirm your age, identity, and location to comply with applicable laws and prevent fraud.</p>
+<p><strong>To Prevent Fraud and Abuse:</strong> Detect and prevent multi-accounting, collusion, unauthorized access, use of VPNs in restricted jurisdictions, and other prohibited conduct.</p>
+<p><strong>To Communicate with You:</strong> Send you transactional emails (password resets, withdrawal confirmations), push notifications (match results, chat messages), and respond to your support inquiries.</p>
+<p><strong>To Comply with Law:</strong> Meet our legal obligations, including tax reporting, anti-money laundering (AML) requirements, and responding to lawful requests from law enforcement or regulatory authorities.</p>
+<p><strong>To Improve the Services:</strong> Analyze usage patterns to improve the App, fix bugs, and develop new features. When we implement analytics tools, usage data may be collected in anonymized or aggregated form.</p>
+<hr />
+<h2>3. How We Share Your Information</h2>
+<p>We do not sell your personal information to third parties. We do not share your information with advertisers.</p>
+<p>We share your information only in the following circumstances:</p>
+<p><strong>Service Providers:</strong> We share information with third-party service providers who help us operate the platform, including:</p>
+<ul>
+<li>Payment processors (for processing deposits and withdrawals)</li>
+<li>Identity verification providers (for KYC compliance)</li>
+<li>Geolocation service providers (for jurisdiction verification)</li>
+<li>Email service providers (for transactional emails)</li>
+<li>Push notification services (for delivering app notifications)</li>
+<li>Cloud hosting providers (for storing and serving data)</li>
+</ul>
+<p>These providers are contractually obligated to use your information only for the purpose of providing services to BattlePicks and are required to protect your information.</p>
+<p><strong>Other Users:</strong> Your username, win/loss record, win streak, and crown color are visible to other Users on the platform (such as on leaderboards and in match details). Your email, real name, location, and financial information are never shared with other Users.</p>
+<p><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law, regulation, legal process, or governmental request, or if we believe disclosure is necessary to protect our rights, your safety, or the safety of others, investigate fraud, or respond to a law enforcement request.</p>
+<p><strong>Business Transfers:</strong> In the event of a merger, acquisition, reorganization, or sale of all or a portion of our assets, your information may be transferred as part of that transaction. We will notify you via email or prominent notice in the App before your information becomes subject to a different privacy policy.</p>
+<hr />
+<h2>4. Data Security</h2>
+<p>We take reasonable measures to protect your personal information from unauthorized access, use, alteration, or destruction. These measures include:</p>
+<ul>
+<li>Encryption of data in transit using TLS/SSL</li>
+<li>Hashed password storage using bcrypt</li>
+<li>Tokenized payment processing (we never store full card numbers)</li>
+<li>Access controls limiting employee access to personal data</li>
+<li>Regular monitoring for suspicious activity</li>
+</ul>
+<p>However, no method of transmission over the Internet or method of electronic storage is 100% secure. We cannot guarantee absolute security of your information.</p>
+<hr />
+<h2>5. Data Retention</h2>
+<p>We retain your information for as long as your Account is active and as needed to provide you the Services.</p>
+<p>After Account deletion:</p>
+<ul>
+<li><strong>User-facing data</strong> (username, profile, visible activity) is removed promptly.</li>
+<li><strong>Transaction records, KYC data, and compliance logs</strong> are retained for seven (7) years after Account closure to comply with tax, legal, anti-money laundering, and regulatory requirements.</li>
+<li><strong>Chat messages</strong> associated with settled Contests may be retained for dispute resolution purposes.</li>
+</ul>
+<hr />
+<h2>6. Your Rights and Choices</h2>
+<h3>6.1 Access and Correction</h3>
+<p>You can view and update your email address and username through the App's Settings. If you need to correct other personal information, contact us at support@battlepicks.co.</p>
+<h3>6.2 Account Deletion</h3>
+<p>You can delete your Account through the App's Settings. Upon deletion, your user-facing data will be removed. Certain records will be retained as described in Section 5.</p>
+<h3>6.3 Push Notifications</h3>
+<p>You can control push notifications through the App's Settings (master toggle and per-category toggles for matches, results, and chat). You can also disable notifications through your device's system settings.</p>
+<h3>6.4 Email Communications</h3>
+<p>You will receive transactional emails related to your Account activity (such as password resets and withdrawal confirmations). These cannot be opted out of while your Account is active because they are necessary for the operation of the Services.</p>
+<h3>6.5 Location Data</h3>
+<p>You may disable GPS-based location access through your device settings. However, IP-based geolocation is required for the Services to function and cannot be disabled. If we cannot verify your location, you may be unable to participate in Contests.</p>
+<hr />
+<h2>7. California Privacy Rights (CCPA)</h2>
+<p>If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):</p>
+<p><strong>Right to Know:</strong> You have the right to request information about the categories and specific pieces of personal information we have collected about you, the categories of sources from which we collect personal information, our business purpose for collecting personal information, and the categories of third parties with whom we share personal information.</p>
+<p><strong>Right to Delete:</strong> You have the right to request deletion of your personal information, subject to certain exceptions (such as legal retention requirements described in Section 5).</p>
+<p><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights.</p>
+<p><strong>No Sale of Personal Information:</strong> We do not sell personal information as defined by the CCPA.</p>
+<p>To exercise your CCPA rights, contact us at support@battlepicks.co. We will verify your identity before processing your request and respond within 45 days.</p>
+<hr />
+<h2>8. Children's Privacy</h2>
+<p>BattlePicks is not directed to individuals under the age of 18 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from anyone under 18. If we become aware that we have collected personal information from a person under 18, we will take steps to delete that information and terminate the associated Account.</p>
+<p>If you believe a minor has provided us with personal information, please contact us at support@battlepicks.co.</p>
+<hr />
+<h2>9. Third-Party Links</h2>
+<p>The App or Site may contain links to third-party websites or services that are not operated by BattlePicks. We are not responsible for the privacy practices of these third parties. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+<hr />
+<h2>10. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated Privacy Policy on the Site and App with a new effective date. Your continued use of the Services after the effective date constitutes your acceptance of the updated Privacy Policy.</p>
+<hr />
+<h2>11. Contact Us</h2>
+<p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+<p>BattlePicks LLC
+Email: support@battlepicks.co
+Website: battlepicks.co</p>
+<hr />
+<p><em>Last updated: [DATE]</em></p>
+</div>
+</body>
+</html>
