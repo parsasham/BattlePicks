@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DFS Contest Rules — BattlePicks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --gold: #F4C430;
+    --near-black: #0A0A0A;
+    --surface: #111;
+    --card: #161616;
+    --border: #222;
+    --white: #fff;
+    --off-white: #e0e0e0;
+    --gray: #888;
+    --muted: #555;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--near-black);
+    color: var(--off-white);
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+  .crown-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='100' viewBox='0 0 1024 1024' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M862 406L749.5 713C563.801 673.804 459.691 673.062 274 713.5L161 405L402 554.5L509 274.5L618.5 554.5L862 406Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3Cpath d='M290.5 686L212 468L508.5 657.5C416.388 660.51 368.274 665.929 290.5 686Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M810.5 467L513 657C600.432 658.166 648.83 664.822 734.5 683L810.5 467Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M592 571L508.5 627.5L424 571L508.5 348L592 571Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 733L274 713.5C459.693 672.961 563.806 672.81 749.5 713L741 733C560.309 699.715 459.753 700.682 281 733Z' fill='%230A0A0A' fill-opacity='0.9'/%3E%3Cpath d='M281 741.999V732C459.087 700.43 559.757 699.668 741 732.5V741.499C561.36 762.645 460.645 763.377 281 741.999Z' fill='%23F4C430' fill-opacity='0.045'/%3E%3C/svg%3E");
+    background-size: 120px 100px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 40px;
+    display: flex; align-items: center;
+  }
+  nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .container {
+    position: relative; z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 24px 60px;
+  }
+  h1 {
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  strong { color: var(--white); }
+  ul, ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--off-white);
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: var(--surface);
+    color: var(--gold);
+    font-weight: 600;
+  }
+  td { color: var(--off-white); }
+  a { color: var(--gold); }
+  .updated {
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 80px 16px 40px; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="crown-bg"></div>
+<nav><a href="/">BATTLEPICKS</a></nav>
+<div class="container">
+<h1>BattlePicks DFS Contest Rules</h1>
+<p><strong>Effective Date: [DATE]</strong></p>
+<p>These DFS Contest Rules ("Rules") govern all Daily Fantasy Sports contests ("Contests") offered on the BattlePicks platform. These Rules are part of and subject to the BattlePicks Terms of Service. By entering a Contest, you agree to these Rules.</p>
+<hr />
+<h2>1. Contest Format: Props Battle</h2>
+<p>BattlePicks offers peer-to-peer DFS pick'em Contests called "Props Battle." In a Props Battle, two Users compete head-to-head by selecting predictions on individual player statistical performances.</p>
+<hr />
+<h2>2. Entry Requirements</h2>
+<h3>2.1 Pick Structure</h3>
+<p>Each Contest entry requires the following:</p>
+<ul>
+<li>A minimum of three (3) Picks on individual player statistical performances (e.g., points scored, rebounds, assists)</li>
+<li>Each Pick must be on a different player (one Pick per player maximum)</li>
+<li>Picks must include players from at least two (2) different teams</li>
+<li>Each Pick consists of selecting "Over" or "Under" on a player's projected statistical line for a specific game</li>
+</ul>
+<h3>2.2 Entry Fees</h3>
+<p>Contest entry fees are denominated in USD. Available entry amounts are displayed in the App and may include $5, $25, and $50 tiers. BattlePicks reserves the right to modify available entry amounts at any time.</p>
+<h3>2.3 Supported Sports and Markets</h3>
+<p>BattlePicks currently supports player prop markets for the following sports and statistical categories:</p>
+<p><strong>NBA:</strong>
+- Player Points (Over/Under)
+- Player Rebounds (Over/Under)
+- Player Assists (Over/Under)
+- Alternate lines for Points, Rebounds, and Assists (where available)</p>
+<p>Additional sports and statistical categories may be added in the future. Available markets depend on third-party data availability and may vary by game and day.</p>
+<h3>2.4 Odds and Lines</h3>
+<p>All statistical lines and associated odds displayed on the platform are sourced from licensed third-party sportsbooks via The Odds API. BattlePicks does not create, set, or modify any odds or lines.</p>
+<p>Lines and odds are locked at the time of Contest entry submission and do not change after submission, regardless of subsequent line movement.</p>
+<hr />
+<h2>3. Matching</h2>
+<h3>3.1 Automatic Matching</h3>
+<p>Contest entries are matched automatically by the platform. Users cannot select, challenge, or request a specific opponent. Entries are matched based on contest format, currency, and entry amount.</p>
+<h3>3.2 Overlap Rules</h3>
+<p>When two Users are matched, no more than one (1) player may overlap between their entries. This means at least two of your three Picks must be on players that your opponent did not select.</p>
+<h3>3.3 Entry Expiration</h3>
+<p>If no opponent is found before the earliest game in your entry is scheduled to begin, your entry will be automatically canceled and your entry fee refunded in full. Refunded amounts are subject to the playthrough requirement as described in the Terms of Service.</p>
+<hr />
+<h2>4. Scoring</h2>
+<h3>4.1 Points System</h3>
+<p>Each Pick is scored using a points system based on the decimal odds (payout multiplier) of the selected line at the time the entry was locked.</p>
+<ul>
+<li>If a Pick is correct (the player's actual stat meets the Over/Under prediction), the Pick earns points equal to its decimal odds value. For example, a Pick at -110 American odds equals 1.91 decimal odds and earns 1.91 points if correct.</li>
+<li>If a Pick is incorrect, the Pick earns 0 points.</li>
+</ul>
+<h3>4.2 Total Score</h3>
+<p>A User's total score is the sum of points earned across all Picks in the Contest. The User with the higher total score wins the Contest.</p>
+<h3>4.3 Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Pick</th>
+<th>American Odds</th>
+<th>Decimal Odds</th>
+<th>Result</th>
+<th>Points Earned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Player A Over 25.5 PTS</td>
+<td>-110</td>
+<td>1.91</td>
+<td>Correct (scored 28)</td>
+<td>1.91</td>
+</tr>
+<tr>
+<td>Player B Under 8.5 REB</td>
+<td>+120</td>
+<td>2.20</td>
+<td>Incorrect (had 10)</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>Player C Over 6.5 AST</td>
+<td>-130</td>
+<td>1.77</td>
+<td>Correct (had 8)</td>
+<td>1.77</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>3.68</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Settlement</h2>
+<h3>5.1 Automatic Settlement</h3>
+<p>Contests are settled automatically after all games included in the Contest have been completed and final official player statistics are available from our data providers.</p>
+<h3>5.2 Prize Distribution</h3>
+<p>The winner of a Contest receives the combined entry fees of both Users, minus a 5% platform fee ("Rake").</p>
+<p><strong>Example:</strong> Two Users each enter $10. Total pool = $20. Rake (5%) = $1.00. Winner receives $19.00.</p>
+<h3>5.3 Ties</h3>
+<p>If both Users score the same total points, the Contest is declared a tie. Both Users receive a full refund of their entry fee. No Rake is charged on tied Contests. Refunded amounts are subject to the playthrough requirement.</p>
+<hr />
+<h2>6. Edge Cases and Special Situations</h2>
+<h3>6.1 Did Not Play (DNP)</h3>
+<p>If a player included in a Pick does not participate in the game for any reason (injury scratch, coach's decision, rest day, or any other reason), that Pick is scored as a Push and earns 1.0 points for both Users. The remainder of the Contest is scored and settled normally.</p>
+<h3>6.2 Player Injury During Game</h3>
+<p>If a player is injured during the course of a game and leaves before it ends, the Pick is graded based on the player's final official statistical line for that game. No special adjustment is made for partial games.</p>
+<h3>6.3 Postponed or Canceled Games</h3>
+<p>If a game is postponed or canceled and no official final statistics are available within 24 hours of the originally scheduled start time, the affected Pick is voided and scored as a Push (1.0 points). The remainder of the Contest is scored and settled normally.</p>
+<p>If the postponed game is played within the 24-hour window and official statistics become available, the Pick will be graded based on those statistics.</p>
+<h3>6.4 Missing Statistical Data</h3>
+<p>If official statistical data for a completed game is not available from our data providers within 24 hours after game completion, the affected Pick may be placed under manual review by BattlePicks. We will make reasonable efforts to obtain accurate statistics and grade the Pick. Users will be notified if their Contest is under review.</p>
+<h3>6.5 All Picks Voided</h3>
+<p>If all Picks in a Contest are voided (e.g., due to multiple game cancellations), both Users receive a full refund of their entry fee. No Rake is charged. Refunded amounts are subject to the playthrough requirement.</p>
+<h3>6.6 Push on Exact Line</h3>
+<p>If a player's final statistic exactly equals the line (e.g., the line is Over 25.0 and the player scores exactly 25), the Pick is scored as a Push and earns 1.0 points. Note: most lines include a half-point (e.g., 25.5) which eliminates the possibility of a push on that Pick.</p>
+<hr />
+<h2>7. Data Sources</h2>
+<p>All player statistics used for grading are sourced from third-party sports data providers. BattlePicks does not independently compile or verify player statistics. In the rare event of a discrepancy between data providers, BattlePicks will use its reasonable judgment to determine the correct result. BattlePicks' determination of Contest results is final.</p>
+<hr />
+<h2>8. Responsible Gaming</h2>
+<p>BattlePicks is committed to responsible gaming. We encourage all Users to play within their means. If you feel you may have a problem with gambling, please contact the National Council on Problem Gambling at 1-800-522-4700 or visit www.ncpgambling.org.</p>
+<p>Users may set personal deposit limits through the App. Users may also request voluntary self-exclusion by contacting support@battlepicks.co.</p>
+<hr />
+<h2>9. Modifications</h2>
+<p>BattlePicks reserves the right to modify these Rules at any time. Material changes will be communicated through the App or Site. Your continued participation in Contests after changes take effect constitutes acceptance of the modified Rules.</p>
+<hr />
+<h2>10. Contact</h2>
+<p>Questions about these Rules may be directed to:</p>
+<p>BattlePicks LLC
+Email: support@battlepicks.co
+Website: battlepicks.co</p>
+<hr />
+<p><em>Last updated: [DATE]</em></p>
+</div>
+</body>
+</html>
