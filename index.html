@@ -245,8 +245,10 @@
   /* ===== MODELS ===== */
   .models-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 24px;
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .model-card {
@@ -270,11 +272,6 @@
     margin-bottom: 20px;
   }
 
-  .model-card.sweepstakes .model-badge {
-    background: rgba(244,196,48,0.12);
-    color: var(--gold);
-    border: 1px solid var(--gold-border);
-  }
 
   .model-card.dfs .model-badge {
     background: rgba(34,197,94,0.1);
@@ -604,7 +601,7 @@
   </div>
   <ul class="nav-links">
     <li><a href="#how-it-works">How It Works</a></li>
-    <li><a href="#models">Models</a></li>
+    <li><a href="#models">Format</a></li>
     <li><a href="#scoring">Scoring</a></li>
     <li><a href="#payments">Payments</a></li>
   </ul>
@@ -624,7 +621,7 @@
   <p class="hero-sub">The first competitive sports prediction gaming platform. Users compete 1v1 in peer-to-peer battles — no house edge, no playing against the operator.</p>
   <div class="hero-badge">
     <span class="dot"></span>
-    Coming Summer 2026
+    NFL season live
   </div>
 </div>
 
@@ -640,17 +637,17 @@
       <div class="step">
         <div class="step-number">STEP 01</div>
         <h3>Choose Entry</h3>
-        <p>User selects their entry amount and currency. Available currencies depend on state of residence.</p>
+        <p>User picks an entry amount &mdash; $5, $25 or $50. Real money, one currency, no coins or promotional balances.</p>
       </div>
       <div class="step">
         <div class="step-number">STEP 02</div>
         <h3>Make Prediction</h3>
-        <p>User selects a sports prediction — game outcomes (sweepstakes) or player props (DFS). Riskier picks earn more points.</p>
+        <p>User builds a roster of three player props &mdash; one pick per player, across at least two teams. Riskier picks earn more points.</p>
       </div>
       <div class="step">
         <div class="step-number">STEP 03</div>
         <h3>Auto-Match</h3>
-        <p>System automatically matches with another user at the same entry level with a different prediction. No opponent selection — fully random.</p>
+        <p>System matches the roster against another user at the same entry level. No more than one player may overlap between the two rosters, and neither user sees the other’s picks before the reveal.</p>
       </div>
       <div class="step">
         <div class="step-number">STEP 04</div>
@@ -665,40 +662,25 @@
 <hr class="divider">
 <section id="models">
   <div class="container">
-    <div class="section-label">Platform Models</div>
-    <h2 class="section-title">Two Legal Frameworks, One Platform</h2>
-    <p class="section-desc">BattlePicks operates under two distinct legal models with state-level availability controls. A free-play mode is available in all states.</p>
+    <div class="section-label">Contest Format</div>
+    <h2 class="section-title">Daily Fantasy Sports, Peer&#8209;to&#8209;Peer</h2>
+    <p class="section-desc">BattlePicks runs one contest format: a skill-based DFS pick&rsquo;em played 1v1 for real money, with state-level availability controls.</p>
 
     <div class="models-grid">
-      <div class="model-card sweepstakes">
-        <div class="model-badge">Sweepstakes Model</div>
-        <h3>BATTLECASH</h3>
-        <p>Dual-currency sweepstakes model. Users purchase BATTLECOINS (non-redeemable virtual currency) and receive BATTLECASH (redeemable for cash prizes) as a free promotional bonus. BATTLECASH is also available through free Alternative Method of Entry (daily login bonus + mail-in request).</p>
-        <ul class="model-details">
-          <li><span class="label">Currency</span><span class="value">BATTLECASH (redeemable)</span></li>
-          <li><span class="label">Purchase</span><span class="value">Buy BATTLECOINS, receive BATTLECASH as free bonus</span></li>
-          <li><span class="label">AMOE</span><span class="value">Daily login + mail-in request</span></li>
-          <li><span class="label">Pick Types</span><span class="value">Game outcomes: moneyline, spread, total, alt lines</span></li>
-          <li><span class="label">Format</span><span class="value">1v1 Classic: 1 main pick + 1 tiebreaker</span></li>
-          <li><span class="label">Entry Range</span><span class="value">1 – 25 BATTLECASH</span></li>
-          <li><span class="label">Age</span><span class="value">18+ (varies by state)</span></li>
-          <li><span class="label">Availability</span><span class="value">Select states (excluding banned jurisdictions)</span></li>
-        </ul>
-      </div>
-
       <div class="model-card dfs">
         <div class="model-badge">Daily Fantasy Sports</div>
         <h3>USD</h3>
-        <p>Skill-based DFS pick'em contest model. Users enter with real USD and compete by predicting individual player statistical performances. Minimum 3 picks, one pick per player, from at least 3 different teams. Classified as a game of skill under UIGEA and state DFS laws.</p>
+        <p>Skill-based DFS pick&rsquo;em. Users enter with real USD and compete by predicting individual player statistical performances. Exactly three picks, one pick per player, from at least two different teams. Classified as a game of skill under UIGEA and state DFS laws.</p>
         <ul class="model-details">
           <li><span class="label">Currency</span><span class="value">USD (real money)</span></li>
-          <li><span class="label">Purchase</span><span class="value">Direct entry fee</span></li>
+          <li><span class="label">Entry</span><span class="value">Direct entry fee &mdash; $5, $25 or $50</span></li>
           <li><span class="label">Pick Types</span><span class="value">Player props only: over/under on individual stats</span></li>
-          <li><span class="label">Format</span><span class="value">1v1 Pick'em: min 3 picks, 1 per player, 3+ teams</span></li>
-          <li><span class="label">Tie Rule</span><span class="value">Both users refunded (with playthrough req.)</span></li>
-          <li><span class="label">Entry Range</span><span class="value">$5 – $50 USD</span></li>
-          <li><span class="label">Age</span><span class="value">18+ (21+ in AZ, MA, VA)</span></li>
-          <li><span class="label">Availability</span><span class="value">DFS pick'em legal states</span></li>
+          <li><span class="label">Format</span><span class="value">1v1 pick&rsquo;em: 3 picks, 1 per player, 2+ teams</span></li>
+          <li><span class="label">Overlap Rule</span><span class="value">At most 1 shared player between matched rosters</span></li>
+          <li><span class="label">Payout</span><span class="value">Winner receives 1.8&times; their entry (10% rake on the pot)</span></li>
+          <li><span class="label">Tie Rule</span><span class="value">Both users refunded, no rake (playthrough applies)</span></li>
+          <li><span class="label">Age</span><span class="value">18+, 19+ in Nebraska</span></li>
+          <li><span class="label">Availability</span><span class="value">17 states</span></li>
         </ul>
       </div>
     </div>
@@ -813,15 +795,15 @@
       </div>
       <div class="fact-card">
         <h4>Matching</h4>
-        <p>Fully automated and random. Users cannot choose opponents. Entries matched by format, currency, and entry amount. DFS matches require at least 2 of 3 picks on different players. Prevents collusion.</p>
+        <p>Fully automated. Users cannot choose opponents. Entries are matched by format and entry amount, and no more than one player may overlap between two matched rosters &mdash; the rule that keeps each contest independent rather than a shared bet.</p>
       </div>
       <div class="fact-card">
         <h4>Supported Sports</h4>
-        <p>NBA, NFL, MLB, NHL, NCAAB, NCAAF at launch. Additional sports to be added based on user demand and data availability.</p>
+        <p>NFL is live, with player props across the full slate. Additional sports follow as data coverage and demand allow.</p>
       </div>
       <div class="fact-card">
         <h4>Deposit Limits</h4>
-        <p>Min: $5 (card) / $25 (ACH). Max: $250 at launch. Conservative limits to minimize fraud risk and chargebacks.</p>
+        <p>$500 deposit cap per rolling 24 hours. Withdrawals are ACH only, $25 minimum, two per rolling 24 hours. Conservative limits to minimize fraud risk and chargebacks.</p>
       </div>
       <div class="fact-card">
         <h4>Entity</h4>
@@ -843,14 +825,14 @@
         <div class="compliance-check">✓</div>
         <div>
           <h4>State-Level Geofencing</h4>
-          <p>App detects user state and displays only legally available modes. Blocked states see no real-money options.</p>
+          <p>Every real-money action is checked server-side against a per-state eligibility list before it executes, and every check is logged. A failed or unavailable check blocks the action. Blocked states see no real-money options.</p>
         </div>
       </div>
       <div class="compliance-item">
         <div class="compliance-check">✓</div>
         <div>
           <h4>Age Verification</h4>
-          <p>18+ for all real-money modes (21+ in AZ, MA, VA for DFS). Verified at registration and first deposit.</p>
+          <p>18+ for real-money play, 19+ in Nebraska. States with a 21+ minimum are not served. Enforced at registration and again at identity verification.</p>
         </div>
       </div>
       <div class="compliance-item">
@@ -864,21 +846,14 @@
         <div class="compliance-check">✓</div>
         <div>
           <h4>AML / KYC Controls</h4>
-          <p>Identity verification for withdrawals. IP logging for multi-account detection. Transaction monitoring for suspicious patterns.</p>
-        </div>
-      </div>
-      <div class="compliance-item">
-        <div class="compliance-check">✓</div>
-        <div>
-          <h4>Free Method of Entry</h4>
-          <p>Sweepstakes model includes AMOE via daily login bonus and mail-in request. Equal access to gameplay without purchase.</p>
+          <p>Document identity verification before any withdrawal. One account per person, with email and phone verification. Velocity limits and transaction monitoring for suspicious patterns.</p>
         </div>
       </div>
       <div class="compliance-item">
         <div class="compliance-check">✓</div>
         <div>
           <h4>Legal Opinion</h4>
-          <p>Formal legal opinion letter in progress covering both sweepstakes and DFS models, prepared for payment processor submission.</p>
+          <p>Signed legal opinion letter from independent gaming counsel covering the DFS contest format under federal law and a 50-state survey, issued for payment-processor underwriting.</p>
         </div>
       </div>
     </div>
