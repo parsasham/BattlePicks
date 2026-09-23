@@ -369,7 +369,7 @@
     margin-bottom: 4px;
   }
 
-  .player-card .odds {
+  .player-card .pick-note {
     font-size: 0.8rem;
     color: var(--muted);
     margin-bottom: 12px;
@@ -692,43 +692,43 @@
 <section id="scoring">
   <div class="container">
     <div class="section-label">Scoring System</div>
-    <h2 class="section-title">Risk-Based Point Scoring</h2>
-    <p class="section-desc">Points are determined by the payout multiplier of each pick. Riskier predictions earn more points if correct. This creates a strategic layer — users balance risk and reward to outscore their opponent.</p>
+    <h2 class="section-title">Battle Points</h2>
+    <p class="section-desc">Every pick carries a Battle Points value derived from how hard it is to hit. Harder picks are worth more. Users balance difficulty against reward to outscore their opponent.</p>
 
     <div class="scoring-container">
       <h3>Example Battle</h3>
-      <p>Both users' picks hit, but User A's riskier pick earns more points.</p>
+      <p>Both users&rsquo; picks hit, but User A took the harder one and earns more.</p>
 
       <div class="scoring-example">
         <div class="player-card winner">
-          <div class="name">User A — Winner</div>
-          <div class="pick">Warriors +200 ML</div>
-          <div class="odds">Risky pick — high reward</div>
-          <div class="points-label">Points Earned</div>
-          <div class="points">3.0</div>
+          <div class="name">User A &mdash; Winner</div>
+          <div class="pick">Over 24.5 rushing yards</div>
+          <div class="pick-note">Bold pick &mdash; harder to hit</div>
+          <div class="points-label">Battle Points</div>
+          <div class="points">2.7</div>
         </div>
         <div class="vs-badge">VS</div>
         <div class="player-card loser">
-          <div class="name">User B — Loser</div>
-          <div class="pick">Lakers -250 ML</div>
-          <div class="odds">Safe pick — low reward</div>
-          <div class="points-label">Points Earned</div>
-          <div class="points">1.4</div>
+          <div class="name">User B &mdash; Loser</div>
+          <div class="pick">Over 3.5 receptions</div>
+          <div class="pick-note">Safer pick &mdash; easier to hit</div>
+          <div class="points-label">Battle Points</div>
+          <div class="points">1.5</div>
         </div>
       </div>
 
       <div class="scoring-explanation">
         <div class="scoring-point">
-          <div class="sp-label">Safe Picks</div>
-          <p>Favorites (-150 to -250) earn fewer points (1.4 – 1.7) but are more likely to hit.</p>
+          <div class="sp-label">Safer Picks</div>
+          <p>Player lines that are more likely to hit carry fewer Battle Points &mdash; roughly 1.4 to 1.7.</p>
         </div>
         <div class="scoring-point">
-          <div class="sp-label">Risky Picks</div>
-          <p>Underdogs (+150 to +500) earn more points (2.5 – 6.0) but are less likely to hit.</p>
+          <div class="sp-label">Bolder Picks</div>
+          <p>Lines that are harder to hit carry more &mdash; roughly 2.5 to 6.0 &mdash; and reward the user who reads them correctly.</p>
         </div>
         <div class="scoring-point">
-          <div class="sp-label">Game Theory</div>
-          <p>No Nash equilibrium — the optimal strategy constantly evolves. Users balance risk vs. reward to outscore opponents.</p>
+          <div class="sp-label">Strategy</div>
+          <p>The optimal strategy evolves as the board changes. Three picks, one roster, and a real opponent building theirs at the same time.</p>
         </div>
       </div>
     </div>
@@ -787,15 +787,15 @@
     <div class="facts-grid">
       <div class="fact-card">
         <h4>Revenue Model</h4>
-        <p>10% rake on every completed match. Platform is a neutral facilitator — no house edge, no positions against users, no odds-setting.</p>
+        <p>10% rake on every completed match. Platform is a neutral facilitator &mdash; it never takes a position against a user and never sets a line.</p>
       </div>
       <div class="fact-card">
-        <h4>Odds Source</h4>
-        <p>All odds sourced from The Odds API, which aggregates from licensed US sportsbooks. BattlePicks does not create or modify odds.</p>
+        <h4>Market Data</h4>
+        <p>Player lines come from The Odds API, a third-party market-data aggregator. BattlePicks does not originate, set or modify any line &mdash; it consumes published market data and nothing else.</p>
       </div>
       <div class="fact-card">
         <h4>Matching</h4>
-        <p>Fully automated. Users cannot choose opponents. Entries are matched by format and entry amount, and no more than one player may overlap between two matched rosters &mdash; the rule that keeps each contest independent rather than a shared bet.</p>
+        <p>Fully automated. Users cannot choose opponents. Entries are matched by format and entry amount, and no more than one player may overlap between two matched rosters &mdash; the rule that keeps every contest an independent test of two rosters.</p>
       </div>
       <div class="fact-card">
         <h4>Supported Sports</h4>
